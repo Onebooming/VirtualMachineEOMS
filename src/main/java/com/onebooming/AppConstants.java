@@ -58,4 +58,8 @@ public class AppConstants {
     // update view
     public static final String UPDATEVIEW_TITLE = "更新虚拟机信息";
     public static final String UPDATEVIEW_UPDATEBUTTON = "更新";
+
+    // update view
+    public static final String ATTACHVIEW_TITLE = "附件功能";
+    public static final String ATTACHVIEW_ATTACHBUTTON = "附加功能";
 }

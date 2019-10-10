@@ -24,7 +24,7 @@ public class MainView extends JFrame{
 
     private JPanel jPanelNorth, jPanelSouth, jPanelCenter;
     private JButton jButtonFirst, jButtonLast, jButtonNext, jButtonPre, jButtonAdd, jButtonDelete, jButtonUpdate,
-            jButtonFind;
+            jButtonFind, JButtonF1;
     private JLabel currPageNumJLabel;
     private JTextField condition;
     public static JTable jTable;
@@ -46,7 +46,7 @@ public class MainView extends JFrame{
         // north panel
         jPanelNorth = new JPanel();
         //设置布局：1行5列
-        jPanelNorth.setLayout(new GridLayout(1, 5));
+        jPanelNorth.setLayout(new GridLayout(1, 6));
         //JTextField对象
         condition = new JTextField(AppConstants.PARAM_FIND_CONDITION);
         condition.addKeyListener(new FindListener());
@@ -90,6 +90,18 @@ public class MainView extends JFrame{
             }
         });
         jPanelNorth.add(jButtonUpdate);
+        //new function
+        JButtonF1 = new JButton(AppConstants.ATTACHVIEW_ATTACHBUTTON);
+        JButtonF1.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                new com.onebooming.view.AttachFuntion();
+            }
+        });
+        jPanelNorth.add(JButtonF1);
+
+
+
 
         // center panel
         jPanelCenter = new JPanel();
