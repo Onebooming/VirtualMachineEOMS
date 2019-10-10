@@ -23,8 +23,8 @@ public class AttachFuntion  extends JFrame {
         jPanelCenter = new JPanel();
         //将面板拆分成1行2列
         jPanelCenter.setLayout(new GridLayout(1, 2));
-        jPanelCenter.add(new JLabel("Onebooming").);
-        jPanelCenter.setMaximumSize(1);
+        jPanelCenter.add(new JLabel("Onebooming"));
+        //jPanelCenter.setMaximumSize();
         jPanelCenter.add(new JLabel("Onebooming"));
         // south panel
         jPanelSouth = new JPanel();
